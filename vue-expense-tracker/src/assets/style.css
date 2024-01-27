@@ -65,8 +65,8 @@ body{
         margin-bottom: 7px;
          border-radius: 5px;
         padding: 5px 10px;
-         
-    }
+        flex-grow: 1;
+     }
     .list .minus{
         border-right:3px solid red;
     }
@@ -77,6 +77,23 @@ body{
         font-size: 18px;
         font-weight: 800;
     }
+     .listItem{
+        position: relative;
+    }
+     .listItem button{
+        background-color: red;
+        color: white;
+        font-weight: 600;
+        border: none;
+          position: absolute;
+          top:20%;
+          left: -7%;
+          opacity: 0;
+
+       }
+       .listItem:hover button{
+        opacity: 1;
+       }
     .header-text{
         background-color: white;
         font-size: 20px;
